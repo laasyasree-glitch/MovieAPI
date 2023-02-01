@@ -16,7 +16,7 @@ get http://localhost:3002/movies/47
 
 ###
 PUT http://localhost:3002/movies/115/
-Content-Type: :application/json
+Content-Type: application/json
 
 {
   "directorId": 24,

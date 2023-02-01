@@ -79,7 +79,7 @@ app.put("/movies/:movieId", async (request, response) => {
   console.log(movieId, directorId, movieName, leadActor);
   const updateQuery = `update movie set 
     director_id=${directorId}, 
-    movie_name='${movieName}, 
+    movie_name='${movieName}', 
     lead_actor='${leadActor}'
      where movie_id=${movieId}`;
   await db.run(updateQuery);
